@@ -116,7 +116,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="UASL Centro de Bienestar y acompañamiento Psicologico"
+            android:text="UASL Centro de Bienestar y Acompañamiento Psicologico"
             android:textColor="#FFFFFF"
             android:gravity="center"
             android:textSize="20dp"
