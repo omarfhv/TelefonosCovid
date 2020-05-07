@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1932c0"
+    tools:context=".QuejasTrabajadoresImss">
+
+
+    <TextView
+        android:id="@+id/txtsop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Quejas solo del \n PERSONAL DEL IMSS"
+        android:textColor="#FFFFFF"
+        android:gravity="center">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_below="@+id/txtsop"
+        android:id="@+id/botonllamada"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/botonblanco"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:background="@drawable/tel"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefonos de Quejas"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/botonllamada"
+        android:id="@+id/botoncorreo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/botonblanco"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gmail"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo a Zoe Robledo \n Director del IMSS"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/admobmanual" />
+
+</RelativeLayout>

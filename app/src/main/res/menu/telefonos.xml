@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <!-- Search, should appear as action button -->
+
+
+    <item
+        android:id="@+id/issste"
+        android:icon="@drawable/issste"
+        android:title="Volver a cargar"
+        yourapp:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/pemex"
+        android:icon="@drawable/pemex"
+        android:title="Volver a cargar"
+        yourapp:showAsAction="ifRoom" />
+
+
+</menu>

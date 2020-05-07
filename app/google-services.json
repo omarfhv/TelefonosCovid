@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "267980575793",
+    "firebase_url": "https://telefonoscovid.firebaseio.com",
+    "project_id": "telefonoscovid",
+    "storage_bucket": "telefonoscovid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267980575793:android:eeebd771bdab570fde7110",
+        "android_client_info": {
+          "package_name": "com.heisenbergtao.telefonoscovid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267980575793-f771m66pec1remmk6l7q872karuspask.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKvdhvvyeXGJlMlfFx7vOHa2w1QDYBVC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267980575793-f771m66pec1remmk6l7q872karuspask.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

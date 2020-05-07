@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1932c0"
+    tools:context=".QuejasTrabajadoresImss">
+
+
+    <TextView
+        android:id="@+id/txtsop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="Telefonos Profeco"
+        android:textColor="#FFFFFF"
+        android:gravity="center">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_below="@+id/txtsop"
+        android:id="@+id/botonllamadaprofeco"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/botonblanco"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/tel"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opcion 1"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/botonllamadaprofeco"
+        android:id="@+id/botonllamadaprofeco2"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/botonblanco"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/tel"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opcion 2"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/botonllamadaprofeco2"
+        android:id="@+id/txtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textColor="#FFFFFF"
+
+        android:text="HORARIO DE ATENCION:\n 9:00 a 19:00 de Lunes a Viernes\n 10:00 a 18:00 fines de semana y dias festivos "
+        >
+
+    </TextView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/admobmanual" />
+
+</RelativeLayout>

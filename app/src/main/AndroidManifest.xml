@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.heisenbergtao.telefonoscovid">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".AyudaPsicologic"></activity>
+        <activity android:name=".Pemex" />
+        <activity android:name=".Tamaulipas" />
+        <activity android:name=".Oaxaca" />
+        <activity android:name=".NuevoLeon" />
+        <activity android:name=".Durango" />
+        <activity android:name=".Chiapas" />
+        <activity android:name=".BajaCaliforniaSur" />
+        <activity android:name=".BajaCalifornia" />
+        <activity android:name=".Cdmx" />
+        <activity android:name=".InfoPaciente" />
+        <activity android:name=".TelefonosMexico" />
+        <activity android:name=".Profeca" />
+        <activity android:name=".Hospitales" />
+        <activity android:name=".QuejasTrabajadoresImss" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9129010539844350~9955252890" />
+    </application>
+
+</manifest>
