@@ -13,12 +13,16 @@ import android.os.Build;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 
 import static android.Manifest.permission.CALL_PHONE;
 import static android.Manifest.permission.SEND_SMS;
@@ -31,6 +35,7 @@ public class Cdmx extends AppCompatActivity implements View.OnClickListener {
     LinearLayout botonllamada1, botonllamada;
     ColorDrawable dialogColor;
     private AdView mAdView;
+    InterstitialAd mInterstitialAd;
 
 
     @Override
@@ -49,6 +54,12 @@ public class Cdmx extends AppCompatActivity implements View.OnClickListener {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId("ca-app-pub-2736592244570345/8278638328");
+        AdRequest adRequest1 = new AdRequest.Builder().build();
+        mInterstitialAd.loadAd(adRequest1);
+        mInterstitialAd.setAdListener(new AdListener());
+
 // SI NOS CONCEDE EL PERMISO Y LANZA LA LLAMADA
 
 
@@ -59,7 +70,6 @@ public class Cdmx extends AppCompatActivity implements View.OnClickListener {
         botonllamada1.setOnClickListener(this);
 
 
-        validaPermisos();
 
 
     }
@@ -79,47 +89,38 @@ public class Cdmx extends AppCompatActivity implements View.OnClickListener {
 
             case R.id.botonmensaje:
 
-                String phone = "51515";
-                String text = "covid19";
-                SmsManager sms = SmsManager.getDefault();
-                sms.sendTextMessage(phone, null, text , null, null);
+             //   String phone = "51515";
+               // String text = "covid19";
+                //SmsManager sms = SmsManager.getDefault();
+                //sms.sendTextMessage(phone, null, text , null, null);
+
+                final AlertDialog.Builder builders = new AlertDialog.Builder(Cdmx.this);
+                final LayoutInflater inflater = getLayoutInflater();
+                View vis = inflater.inflate(R.layout.mensje, null);
+                builders.setView(vis);
+                final AlertDialog dialogo = builders.create();
+                dialogo.setCancelable(true);
+                dialogo.getWindow().setBackgroundDrawable(dialogColor);
+                Button botonoko = vis.findViewById(R.id.botoncont);
+                botonoko.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        dialogo.dismiss();
+                        mInterstitialAd.show();
 
 
+                    }
+                });
 
 
-            break;
+                dialogo.show();
+
+
+                break;
+
         }
 
-
-    }
-
-
-    private void validaPermisos() {
-
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
-            return;
-        }
-
-        if ((checkSelfPermission(SEND_SMS) == PackageManager.PERMISSION_GRANTED)) {
-            return;
-        }
-
-        if ((shouldShowRequestPermissionRationale(SEND_SMS))) {
-            AlertDialog.Builder dialogo = new AlertDialog.Builder(Cdmx.this);
-            dialogo.setTitle("Permisos Desactivados");
-            dialogo.setMessage("Debe aceptar los permisos para el correcto funcionamiento de la App");
-
-            dialogo.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
-                @RequiresApi(api = Build.VERSION_CODES.M)
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                    requestPermissions(new String[]{ SEND_SMS}, 100);
-                }
-            });
-            dialogo.show();
-        } else {
-            requestPermissions(new String[]{ SEND_SMS}, 100);
-        }
 
     }
 

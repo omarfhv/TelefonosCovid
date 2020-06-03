@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mAdView.loadAd(adRequest);
 
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-9129010539844350/7943812005");
+        mInterstitialAd.setAdUnitId("ca-app-pub-2736592244570345/8278638328");
         AdRequest adRequest1 = new AdRequest.Builder().build();
         mInterstitialAd.loadAd(adRequest1);
         mInterstitialAd.setAdListener(new AdListener());

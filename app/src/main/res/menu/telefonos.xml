@@ -5,13 +5,13 @@
 
     <item
         android:id="@+id/issste"
-        android:icon="@drawable/issste"
+        android:icon="@drawable/isss"
         android:title="Volver a cargar"
         yourapp:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/pemex"
-        android:icon="@drawable/pemex"
+        android:icon="@drawable/pem"
         android:title="Volver a cargar"
         yourapp:showAsAction="ifRoom" />
 

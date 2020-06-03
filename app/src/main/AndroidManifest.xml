@@ -5,17 +5,18 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logoss"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logoss"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".AyudaPsicologic"></activity>
+        <activity android:name=".MiFirebaseMessagingService"></activity>
+        <activity android:name=".MiFirebaseIntacedService" />
+        <activity android:name=".AyudaPsicologic" />
         <activity android:name=".Pemex" />
         <activity android:name=".Tamaulipas" />
         <activity android:name=".Oaxaca" />
@@ -41,7 +42,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-9129010539844350~9955252890" />
+            android:value="ca-app-pub-2736592244570345~5022468338" />
     </application>
 
 </manifest>

@@ -64,9 +64,9 @@ public class Durango extends AppCompatActivity implements View.OnClickListener {
 
             case R.id.btnbja1:
 
-                Intent intent1 = new Intent(Intent.ACTION_DIAL);
-                intent1.setData(Uri.parse("618 137 7306"));
-                startActivity(intent1);
+                Intent intent14 = new Intent(Intent.ACTION_DIAL);
+                intent14.setData(Uri.parse("tel:618 137 7306"));
+                startActivity(intent14);
 
                 break;
 

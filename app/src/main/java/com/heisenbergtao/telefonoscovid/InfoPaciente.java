@@ -91,7 +91,7 @@ public class InfoPaciente extends AppCompatActivity implements View.OnClickListe
                 finish();
                 break;
 
-            case R.id.botonllamada:
+            case R.id.botonllamadainfo:
 
                 Intent intent = new Intent(Intent.ACTION_DIAL);
                 intent.setData(Uri.parse("tel:800 623 2323"));

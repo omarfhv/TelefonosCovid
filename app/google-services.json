@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "267980575793",
-    "firebase_url": "https://telefonoscovid.firebaseio.com",
-    "project_id": "telefonoscovid",
-    "storage_bucket": "telefonoscovid.appspot.com"
+    "project_number": "738879294633",
+    "firebase_url": "https://telecovid-de591.firebaseio.com",
+    "project_id": "telecovid-de591",
+    "storage_bucket": "telecovid-de591.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:267980575793:android:eeebd771bdab570fde7110",
+        "mobilesdk_app_id": "1:738879294633:android:c74f5041043dee691aadb8",
         "android_client_info": {
-          "package_name": "com.heisenbergtao.telefonoscovid"
+          "package_name": "com.ayudacovid.telefonoscovid"
         }
       },
       "oauth_client": [
         {
-          "client_id": "267980575793-f771m66pec1remmk6l7q872karuspask.apps.googleusercontent.com",
+          "client_id": "738879294633-hluv2r21tlnl6m7i2kgfk1dn28b9o7l4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDKvdhvvyeXGJlMlfFx7vOHa2w1QDYBVC4"
+          "current_key": "AIzaSyDn77mdwZ19SogUzwidNoMBO8RRkmMETtQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "267980575793-f771m66pec1remmk6l7q872karuspask.apps.googleusercontent.com",
+              "client_id": "738879294633-hluv2r21tlnl6m7i2kgfk1dn28b9o7l4.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

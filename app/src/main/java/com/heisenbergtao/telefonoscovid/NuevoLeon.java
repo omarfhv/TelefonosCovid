@@ -65,7 +65,7 @@ public class NuevoLeon extends AppCompatActivity implements View.OnClickListener
             case R.id.btnbja1:
 
                 Intent intent1 = new Intent(Intent.ACTION_DIAL);
-                intent1.setData(Uri.parse(" 818 361 0058"));
+                intent1.setData(Uri.parse("tel:818 361 0058"));
                 startActivity(intent1);
 
                 break;
